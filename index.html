@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS.css">
+  <style>
+    table,
+    td {
+      border-collapse: collapse;
+      color: rgb(190, 79, 0);
+    }
+  </style>
+
+  <title>Homework №1</title>
+</head>
+
+<body>
+  <header>
+    <a href="#">Ововщи</a>
+  <a href="#">Продажа</a>
+  <form action="action_page.php">
+    <div class="container">
+      <h1>Регистрация</h1>
+      <p>Пожалуйс та заполните эту форму чтобы создать аккаунт.</p>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <hr>
+  
+      <p>При создание аккаунта вы соглашаетесь со всем <a href="#">Terms & Privacy</a>.</p>
+      <button type="submit" class="registerbtn">Зарегестрироваться</button>
+    </div>
+  
+    <div class="container signin">
+      <p>У вас уже есть аккаунт? <a href="#">Войти</a>.</p>
+    </div>
+  </form>
+  <div class="outline">
+    <p><b> В этой таблице приведена информация про три вида овощей и также как их вырастить.</b></p>
+  </div>
+  </header>
+  <main>
+    <h1>Наименование и стоимость овощей</h1>
+    <table border="4">
+      <tr>
+        <th>№ п/п</th>
+        <th>Наименование товара</th>
+        <th>Ед. изм.</th>
+        <th>Количество</th>
+        <th>Цена за ед. изм., руб.</th>
+        <th>Стоимость, руб.</th>
+        <th>Дата поступления</th>
+        <th>Поставщик</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>Томаты свежие</td>
+        <td>кг</td>
+        <td>15,20</td>
+        <td>69,00</td>
+        <td>1048,80</td>
+        <td>25.04.2023</td>
+        <td>ОАО БелАгро</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Огурцы свежие</td>
+        <td>кг</td>
+        <td>2,50</td>
+        <td>48,00</td>
+        <td>120,00</td>
+        <td>25.04.2023</td>
+        <td>ОАО БелАгро</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Перцы свежие</td>
+        <td>кг</td>
+        <td>2,50</td>
+        <td>60,00</td>
+        <td>110,00</td>
+        <td>25.04.2023</td>
+        <td>ОАО БелАгро</td>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>Томаты Белолруские</td>
+        <td>кг</td>
+        <td>15,20</td>
+        <td>69,00</td>
+        <td>1048,80</td>
+        <td>25.04.2023</td>
+        <td>ОАО БелАгро</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align:right">ИТОГО:</td>
+        <td>4368,80</td>
+      </tr>
+    </table>
+  </main>
+
+
+  <footer>
+    <div>
+      <h3> Список продуктов к таблице</h3>
+      <p>
+        <font color="#FF0000" size="5"> <b>Наведите курсор на стрелку чтоб узнать больше о товаре!</b></font>
+      </p>
+    </div>
+    <button class="btn">Button</button>
+    <div class="dropdown">
+      <button class="btn" style="border-left:1px solid #0d8bf2">
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://www.countrysideliving.net/articles/Growing-Cucumbers.html">Cucumber</a>
+        <a href="https://dolinasad.by/blog/sovety-pokupatelyam/sladkiy-perets-obzor-top-10-sortov/">Papper</a>
+        <a href="https://www.countrysideliving.net/ART_Tomato_Jul07.html">Tomato</a>
+      </div>
+    </div>
+    <p><b>Пожалуйста оcтавте ваш отзыв и оцените сайт выбрав значение на ползунке</p>
+    </div>
+    <textarea></textarea>
+    <div>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+      <span>© 2023, ОАО, БелАгро, Минск ул.Держинского 23</span>
+      <div>
+          <a href="#">Пользовательское соглашение</a>
+      </div>
+  </footer>
+</body>
+
+</html>
